@@ -1,21 +1,21 @@
-const refs = {
-  sub: document.querySelector(".increment"),
-  add: document.querySelector(".decrement"),
-  span: document.querySelector("#value"),
-};
+
+const sub = document.querySelector(".increment");
+const add = document.querySelector(".decrement");
+const span = document.querySelector("#value");
+
 
 let counterValue = 0;
 const increment = () => {
   counterValue += 1;
 
-  refs.span.textContent = counterValue;
+  span.textContent = counterValue;
 };
 
 const decrement = () => {
   counterValue -= 1;
 
-  refs.span.textContent = counterValue;
+  span.textContent = counterValue;
 };
 
-refs.sub.addEventListener("click", increment);
-refs.add.addEventListener("click", decrement);
+sub.addEventListener("click", increment);
+add.addEventListener("click", decrement);
