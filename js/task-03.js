@@ -22,12 +22,14 @@ const makeGalleryCard = ({ url, alt } = {}) => {
   `;
 };
 
-const galleryCards = images.map(el => {
+const galleryCards = images.map((el) => {
   return makeGalleryCard(el);
 });
 
-galleryListEl.innerHTML = galleryCards.join('');
-galleryListEl.insertAdjacentHTML('beforeend', galleryCards.join(''));
+galleryListEl.innerHTML = galleryCards.join("");
+galleryListEl.insertAdjacentHTML("beforeend", galleryCards.join(""));
 
-
-galleryListEl.setAttribute("style", "list-style-type:none; display: flex; flex-wrap:wrap; gap:30px");
+galleryListEl.setAttribute(
+  "style",
+  "list-style-type:none; display: flex; flex-wrap:wrap; gap:30px"
+);
